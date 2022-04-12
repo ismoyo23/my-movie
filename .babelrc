@@ -1,0 +1,33 @@
+{
+  "presets": ["module:metro-react-native-babel-preset"],
+  "plugins": [
+    [
+      "module-resolver",
+      {
+        "root": ["./src"],
+        "alias": [
+          {"@home": "./component/page/home"},
+          {"@image": "./main/img"},
+          {"@style": "./component/style/styles"},
+          {"@page": "./component/page"},
+          {"@redux": "./redux"},
+          {"@oraganism": "./component/organism"},
+          {"@molecules": "./component/molecules"},
+          {"@atoms": "./component/atoms"}
+        ],
+        "extensions": [".js", ".jsx", ".ts", ".tsx"]
+      }
+    ],
+    [
+      "dotenv-import",
+      {
+        "moduleName": "@env",
+        "path": ".env",
+        "blacklist": null,
+        "whitelist": null,
+        "safe": false,
+        "allowUndefined": false
+      }
+    ]
+  ]
+}
