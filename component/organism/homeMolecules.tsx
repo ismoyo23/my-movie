@@ -1,9 +1,11 @@
 // containers
 import React, {useState, useEffect} from 'react';
-import {View, ImageBackground, ScrollView, Alert, Modal} from 'react-native';
+
 import {styles} from '@style';
 import {useDispatch} from 'react-redux';
 // component
+import {View, ImageBackground, ScrollView, Alert, Modal} from 'react-native';
+
 import {Card} from '@molecules/card';
 import {CardHeader} from '@molecules/cardHeader';
 import {Navbar} from '@molecules/navbar';
