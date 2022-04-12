@@ -21,11 +21,23 @@ const initialState = {
 
 const filmReducer = (state: State = initialState, action: Action): State => {
   switch (action.type) {
-    case 'FILM_SUCCESS':
+     case ActionType.FILM_PENDING:
+      return {
+        loading: true,
+        film: [],
+        error: null,
+      };
+    case ActionType.FILM_SUCCESS:
       return {
         loading: false,
         film: action.payload,
         error: null,
+      };
+     case ActionType.FILM_FAIL:
+      return {
+        loading: false,
+        error: action.payload,
+        film: [],
       };
 
     default:
