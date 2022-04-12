@@ -1,4 +1,6 @@
 import React from 'react';
+
+//components
 import {View} from 'react-native';
 import {Texts} from '@atoms/text';
 
