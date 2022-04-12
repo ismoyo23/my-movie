@@ -82,7 +82,7 @@ let HomeMolecules = () => {
 
         {film.production_companies == null ? null : (
           <ScrollView horizontal={true} style={styles.scrollView}>
-            {film.production_companies.map((data: any, key: number) => {
+            {film.production_companies.map((data: string, key: number) => {
               return (
                 <Card
                   action={() => detail(data.name, data.origin_country)}
